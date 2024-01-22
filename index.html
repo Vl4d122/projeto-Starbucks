@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <title>Starbucks</title>
+</head>
+
+    <body>
+        <div class="circulo"></div>
+
+        <img src="./img/logo principal.png" alt="logo starbucks">
+        <div class="box-conteúdo">
+            <div class="box-texto">
+                <h2>Não é apenas café, É um <span>Starbucks</span>
+                </h2>
+
+                <p>Lorem ipsum dolor sit amet . Os operadores gráficos e tipográficos sabem disso bem, na realidade, todas
+                    as
+                    profissões que lidam com o universo da comunicação têm um relacionamento estável com essas palavras, mas
+                    o que
+                    é? Lorem ipsum é um texto fofo sem qualquer sentido...</p>
+
+                <button>Peça já o seu</button>
+            </div>
+            <div class="box-copo">
+            <img src="./img/copo verde.png" alt="copo verde" class="copao">
+        </div>
+    </div>
+    <div class="menu">
+    <img src="./img/rosa pequena.png" alt="copo rosa" class="copo-pequeno rosa">
+    <img src="./img/pequeno verde.png" alt="copão" class="copo-pequeno verde">
+    <img src="./img/laranja pequeno.png" alt="copo laranja" class="copo-pequeno laranja">
+</div>
+
+</body>
+
+<script> 
+let circulo = document.querySelector(".circulo")
+let imgcopão = document.querySelector(".copao")
+let rosa = document.querySelector(".rosa")
+let verde = document.querySelector(".verde")
+let laranja = document.querySelector(".laranja")
+
+rosa.addEventListener("click", () => {
+    imgcopão.src = "./img/copo rosa.png"
+    circulo.style.background = "#ff007f"
+})
+verde.addEventListener("click", () => {
+    imgcopão.src = "./img/copo verde.png"
+    circulo.style.background = "#017143"
+})
+laranja.addEventListener("click", () => {
+    imgcopão.src = "./img/copo laranja.png"
+    circulo.style.background = "#eb7495"
+})
+    
+
+
+
+
+</script>
+
+</html>
